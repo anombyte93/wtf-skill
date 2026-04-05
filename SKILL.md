@@ -75,7 +75,7 @@ Fixed 4-section output. Every item gets a one-liner. No fluff.
 ### Step 5: Completeness review (load agents/completeness-reviewer.md)
 **TaskUpdate: Step 5 → in_progress**
 
-Dispatch lightweight agent to review your output against the full conversation. It catches:
+Dispatch completeness-reviewer agent (model=sonnet, NOT haiku — haiku is too shallow). It catches:
 - Things the user mentioned that you didn't cover
 - Connected systems you missed
 - Assumptions you made that need calling out
